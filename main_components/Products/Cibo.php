@@ -13,3 +13,11 @@ class Cibo extends Articolo
     $this->ingredienti = $ingredienti;
   }
 }
+
+$cibo1 = new Cibo('Sano Foody', 'EPH7854', 5, 'Besty', 'Gatto', 'Morbide crocchette gustose', 'Umido', 'Pollo');
+
+$cibo2 = new Cibo('Sano Foody', 'EPH7664', 5, 'Besty', 'Cane', 'Morbide crocchette gustose', 'Umido', 'Pollo');
+
+$cibo3 = new Cibo('Happy Food', 'EPH7854', 5, 'Besty', 'Gatto', 'Croccanti bocconcini', 'Secco', 'Manzo');
+
+$cibo4 = new Cibo('Happy Food', 'EPH7664', 5, 'Besty', 'Cane', 'Croccanti bocconcini', 'Secco', 'Pollo');
