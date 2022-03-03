@@ -12,3 +12,5 @@ class Cliente
     $this->cognome = $cognome;
   }
 }
+
+$firstCliente = new Cliente('Linda', 'Bettini');
