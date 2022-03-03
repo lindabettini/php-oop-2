@@ -8,8 +8,7 @@ class Cibo extends Articolo
 
   public function __construct($nome, $codiceArticolo, $prezzo, $marca, $categoriaAnimali, $dettagliProdotto, $qualita, $ingredienti)
   {
-    return parent::__construct($nome, $codiceArticolo, $prezzo, $marca, $categoriaAnimali, $dettagliProdotto);
-
+    parent::__construct($nome, $codiceArticolo, $prezzo, $marca, $categoriaAnimali, $dettagliProdotto);
     $this->qualita = $qualita;
     $this->ingredienti = $ingredienti;
   }

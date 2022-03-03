@@ -9,7 +9,7 @@ class ClienteIscritto extends Cliente
 
   public function __construct($nome, $cognome, $nomeUtente, $password, $sconto = 20)
   {
-    return parent::__construct($nome, $cognome);
+    parent::__construct($nome, $cognome);
     $this->nomeUtente = $nomeUtente;
     $this->password = $password;
     $this->sconto = $sconto;
