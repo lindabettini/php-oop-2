@@ -1,7 +1,7 @@
 <?php
-require_once __DIR__ . '/Articolo.php';
+require_once __DIR__ . '/products/Articolo.php';
 
-class Giochi extends Articolo
+class Gioco extends Articolo
 {
   public function __construct($nome, $codiceArticolo, $prezzo, $marca, $categoriaAnimali, $dettagliProdotto)
   {

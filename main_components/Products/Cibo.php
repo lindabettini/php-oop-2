@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/Articolo.php';
+require_once __DIR__ . '/products/Articolo.php';
 
 class Cibo extends Articolo
 {
@@ -11,6 +11,6 @@ class Cibo extends Articolo
     return parent::__construct($nome, $codiceArticolo, $prezzo, $marca, $categoriaAnimali, $dettagliProdotto);
 
     $this->qualita = $qualita;
-    $this->ingredienti;
+    $this->ingredienti = $ingredienti;
   }
 }
