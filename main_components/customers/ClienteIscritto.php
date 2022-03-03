@@ -15,3 +15,5 @@ class ClienteIscritto extends Cliente
     $this->sconto = $sconto;
   }
 }
+
+$secondClient = new ClienteIscritto('Pinco', 'Panco', 'PincoPallino', 'topsecret!1', 20);
