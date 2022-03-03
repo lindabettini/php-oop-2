@@ -1,9 +1,9 @@
 <?php
 
-require_once __DIR__ . '/products/Articolo.php';
-require_once __DIR__ . '/products/Gioco.php';
-require_once __DIR__ . '/products/Cibo.php';
-require_once __DIR__ . '/products/Igiene.php';
+require_once __DIR__ . '/main_components/products/Articolo.php';
+require_once __DIR__ . '/main_components/products/Gioco.php';
+require_once __DIR__ . '/main_components/products/Cibo.php';
+require_once __DIR__ . '/main_components/products/Igiene.php';
 
 $Cibo1 = new Cibo('Sano Foody', 'EPH7854', 5, 'Besty', 'Gatto', 'Morbide crocchette gustose', 'Umido', 'Pollo');
 

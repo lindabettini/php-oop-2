@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/Articolo.php';
+require_once __DIR__ . '/main_components/products/Articolo.php';
 
 class Igiene extends Articolo
 {
