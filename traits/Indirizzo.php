@@ -39,7 +39,7 @@ trait Indirizzo
   }
 
   /**
-   * Get the value of Via
+   * Get the value of  Citta'
    */
   public function getCitta()
   {
