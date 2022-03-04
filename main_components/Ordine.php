@@ -3,9 +3,13 @@
 require_once __DIR__ . '/Carrello.php';
 require_once __DIR__ . '/customers/Cliente.php';
 require_once __DIR__ . '/customers/ClienteIscritto.php';
+require_once __DIR__ . '/../traits/Indirizzo.php';
+require_once __DIR__ . '/../traits/CartaDiCredito.php';
 
 class Ordine
 {
+  use Indirizzo;
+  use CartaDiCredito;
   public $stato_ordine;
   public $metodoPagamento;
   public $totaleOrdine;

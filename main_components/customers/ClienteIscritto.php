@@ -1,10 +1,12 @@
 <?php
 require_once __DIR__ . '/Cliente.php';
 require_once __DIR__ . '/../traits/Indirizzo.php';
+require_once __DIR__ . '/../traits/CartaDiCredito.php';
 
 class ClienteIscritto extends Cliente
 {
   use Indirizzo;
+  use CartaDiCredito;
   public $nomeUtente;
   public $password;
   public $sconto;
