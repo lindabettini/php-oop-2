@@ -1,13 +1,14 @@
 <?php
 
 require_once __DIR__ . '/Carrello.php';
-require_once __DIR__ . '/Cliente.php';
-require_once __DIR__ . '/ClienteIscritto.php';
+require_once __DIR__ . '/customers/Cliente.php';
+require_once __DIR__ . '/customers/ClienteIscritto.php';
 
 class Ordine
 {
   public $stato_ordine;
   public $metodoPagamento;
+  public $totaleOrdine;
 
   public function __construct($stato_ordine, $metodoPagamento = 'Carta di Credito')
   {
@@ -17,9 +18,9 @@ class Ordine
 
   public function calcolaTotale($prodotti_selezionati)
   {
-    $importiDaPagare = [];
+    $this->totaleOrdine = 0;
     foreach ($prodotti_selezionati as $articolo) {
-      $importiDaPagare[] = [$articolo->prezzo];
+      $this->totaleOrdine += $articolo->prezzo;
     }
   }
 }
