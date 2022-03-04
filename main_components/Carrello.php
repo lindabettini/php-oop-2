@@ -3,20 +3,16 @@
 require_once __DIR__ . '/products/Articolo.php';
 class Carrello
 {
-  public $prodottiSelezionati = [];
-  public $totaleSpesa;
+  public $prodotti_selezionati = [];
 
-  public function __construct(array $prodottiSelezionati, $totaleSpesa)
+  public function __construct(array $prodotti_selezionati,)
   {
-    $this->prodottiSelezionati = $prodottiSelezionati;
-    $this->calcolaSpesa() = $totaleSpesa;
+    $this->aggiungiAlCarrello($prodotto) = $prodotti_selezionati;
   }
 
-  public function calcolaSpesa($prodottiSelezionati)
+  public function aggiungiAlCarrello($prodotto)
   {
-    $prices = [];
-    foreach ($prodottiSelezionati as $prodotto) :
-      array_push($prodotto($prices, $articolo->$prezzo));
-    endforeach;
+    if (!($prodotto instanceof Articolo)) throw new Exception('Articolo non trovato');
+    $this->$prodotti_selezionati = $prodotto;
   }
 }
