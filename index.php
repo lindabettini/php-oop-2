@@ -8,12 +8,3 @@ require_once __DIR__ . '/main_components/customers/Cliente.php';
 require_once __DIR__ . '/main_components/customers/ClienteIscritto.php';
 require_once __DIR__ . '/main_components/Carrello.php';
 require_once __DIR__ . '/main_components/Cassa.php';
-
-
-$lindaCarrello = new Carrello([$cibo1, $cibo2, $cibo3]);
-
-var_dump($lindaCarrello);
-
-$pincoPancoCarrello = new Carrello([$cibo2, $cibo4]);
-
-var_dump($pincoPancoCarrello);
