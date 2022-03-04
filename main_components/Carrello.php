@@ -12,10 +12,3 @@ class Carrello
     $this->prodotti_selezionati[] = $prodotto;
   }
 }
-
-
-$lindaCarrello = new Carrello;
-
-$lindaCarrello->aggiungiAlCarrello($cibo1);
-
-var_dump($lindaCarrello);

@@ -1,10 +1,21 @@
 <?php
 
-require_once __DIR__ . '/main_components/products/Articolo.php';
-require_once __DIR__ . '/main_components/products/Gioco.php';
-require_once __DIR__ . '/main_components/products/Cibo.php';
-require_once __DIR__ . '/main_components/products/Igiene.php';
-require_once __DIR__ . '/main_components/customers/Cliente.php';
-require_once __DIR__ . '/main_components/customers/ClienteIscritto.php';
-require_once __DIR__ . '/main_components/Carrello.php';
-require_once __DIR__ . '/main_components/Cassa.php';
+require_once __DIR__ . '/products/Articolo.php';
+require_once __DIR__ . '/customers/Cliente.php';
+require_once __DIR__ . '/customers/ClienteIscritto.php';
+require_once __DIR__ . '/Carrello.php';
+require_once __DIR__ . '/Ordine.php';
+
+
+$lindaCarrello = new Carrello;
+
+$lindaCarrello->aggiungiAlCarrello($cibo1);
+
+var_dump($lindaCarrello);
+
+
+$lindaOrdine = new Ordine('confermato');
+
+$lindaOrdine->calcolaTotale($lindaCarrello->prodotti_selezionati);
+
+var_dump($lindaOrdine);
