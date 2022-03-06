@@ -12,3 +12,10 @@ class Carrello
     $this->prodotti_selezionati[] = $prodotto;
   }
 }
+
+// public function aggiungiAlCarrello($prodotti)
+// {
+//   $prodotti = [];
+//   if (!($prodotti instanceof Articolo)) throw new Exception('Articolo non trovato');
+//   $this->prodotti_selezionati[] = $prodotti;
+// }
