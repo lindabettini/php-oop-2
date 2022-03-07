@@ -5,7 +5,6 @@ require_once __DIR__ . '/customers/Cliente.php';
 require_once __DIR__ . '/customers/ClienteIscritto.php';
 require_once __DIR__ . '/traits/Indirizzo.php';
 require_once __DIR__ . '/traits/CartaDiCredito.php';
-
 class Ordine
 {
   use Indirizzo;

@@ -7,12 +7,12 @@ trait CartaDiCredito
   private $saldo;
   private $scadenza;
 
-  public function getIndirizzo()
+  public function getCarta()
   {
     return "$this->numero $this->banca $this->saldo $this->scadenza";
   }
 
-  public function setAddress($numero, $banca, $saldo, $scadenza)
+  public function setCard($numero, $banca, $saldo, $scadenza)
   {
     $this->setNumero($numero);
     $this->setBanca($banca);
